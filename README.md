@@ -194,6 +194,7 @@ WEB：
 4. *画一下Spring的Bean工厂实现的UML图*
 
 ### Tomcat
+1.一个简单servlet容器实现[代码博主抄的《how tomcat works》](http://www.cnblogs.com/chenpi/p/5603072.html)
 ### Hibernate
 ### MyBatis
 1. MyBatis中$和#的区别
