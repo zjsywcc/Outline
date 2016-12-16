@@ -37,10 +37,10 @@ JAVA：
 1. ConcurrentHashMap
   -  并发怎么控制性能
   -  用什么数据结构实现
-2. 并发编程模式（Java程序性能优化）
+2. 并发编程模式（Java程序性能优化）([多线程设计模式总结](http://www.cloudchou.com/softdesign/post-609.html), [网络爬虫中的那些多线程设计模式](http://www.ahathinking.com/archives/158.html), )
 3. Thread和Runnable的区别和联系([Runnable VS Thread 及其资源共享问题](https://my.oschina.net/leejun2005/blog/483999))
 4. 多次start一个线程会怎样([Java 线程简介](http://www.ibm.com/developerworks/cn/education/java/j-threads/j-threads.html))
-5. 线程有哪些状态([JAVA线程间的状态转换](https://my.oschina.net/mingdongcheng/blog/139263))
+5. 线程有哪些状态([JAVA线程间的状态转换](https://my.oschina.net/mingdongcheng/blog/139263), [Java多线程学习](http://blog.csdn.net/evankaka/article/details/44153709))
 6. 线程池
   - 常用的线程池有几种，这几种线程池有什么区别和联系([java自带线程池和队列详细讲解](https://www.oschina.net/question/565065_86540))
   - 线程池的实现原理([从使用到原理学习Java线程池](http://www.codeceo.com/article/java-threadpool-learn.html), [几种线程池的实现算法分析
@@ -70,7 +70,7 @@ JAVA：
 ### JDK源码
 1. String的hashCode()方法是怎么实现的
 2. List、Map、Set实现类的源代码
-3. ReentrantLock、AQS的源代码
+3. ReentrantLock、AQS的源代码([AbstractQueuedSynchronizer的介绍和原理分析](http://ifeve.com/introduce-abstractqueuedsynchronizer/))
 4. AtomicInteger的实现原理，主要能说清楚CAS机制并且AtomicInteger是如何利用CAS机制实现的
 5. 线程池的实现原理
 6. Object类中的方法以及每个方法的作用
