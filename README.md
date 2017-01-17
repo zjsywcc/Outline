@@ -90,7 +90,7 @@ JAVA：
 4. AtomicInteger的实现原理，主要能说清楚CAS机制并且AtomicInteger是如何利用CAS机制实现的
 5. 线程池的实现原理
 6. Object类中的方法以及每个方法的作用
-7. JDK有默认消息中间件的api?
+7. JDK默认消息中间件的api,JMS([kafka：一个分布式消息系统](http://www.cnblogs.com/bbgasj/p/4176915.html))
 
 ### DS
 1. Arrays and Strings([leetcode习题分类汇总-Array篇](http://zhouchaowei.com/2015/06/02/leetcode-e4-b9-a0-e9-a2-98-e5-88-86-e7-b1-bb-e6-b1-87-e6-80-bb-array-e7-af-87/))
