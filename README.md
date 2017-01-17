@@ -147,11 +147,11 @@ JAVA：
 
 ### 事务
 1. 四个性质ACID
-2. 【常问】隔离级别
+2. 【常问】隔离级别([MySQL事务隔离级别](http://xstarcd.github.io/wiki/MySQL/mysql_isolation_level.html))
 
 ### 索引(`几种索引及其区别`)
 1. 实现方式
-2. 索引优化问题(a, b, c列的index怎么建)
+2. 索引优化问题(a, b, c列的index怎么建,联合索引)([一个mysql多列索引的问题](https://my.oschina.net/costaxu/blog/99170),[MySQL索引原理及慢查询优化](http://tech.meituan.com/mysql-index.html))
 
 ### 读写分离
 
@@ -172,11 +172,11 @@ JAVA：
 
 ### MySQL
 1. 引擎
-  - InnoDB和MyISAM的区别
+  - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](MySQL存储引擎MyISAM与InnoDB的主要区别对比))
 2. 水平切分和垂直切分(分布式)
 
 ### 场景
-1. 两台服务器之间数据库通信问题，如果有网络超时，故障，如何处理（以2个银行之间转账为例），如何保持实时性(原子性和一致性, CAP)
+1. 两台服务器之间数据库通信问题，如果有网络超时，故障，如何处理（以2个银行之间转账为例），如何保持实时性(原子性和一致性, CAP,BASE)([分布式系统的事务处理](http://coolshell.cn/articles/10910.html),[分布式系统事务一致性解决方案](http://www.infoq.com/cn/articles/solution-of-distributed-system-transaction-consistency),[保证分布式系统数据一致性的6种方案](http://weibo.com/ttarticle/p/show?id=2309403965965003062676))
 
 WEB：
 ======
@@ -197,18 +197,29 @@ WEB：
 4. 协议
 
 ### 分布式([谈谈业务中使用分布式的场景](https://segmentfault.com/q/1010000006095431))
-1. CAP原则
+1. CAP BASE([CAP原则(CAP定理)、BASE理论](http://www.cnblogs.com/duanxz/p/5229352.html),[如何正确理解CAP理论？](http://www.jdon.com/bigdata/how-to-understand-cap.html),[CAP理论十二年回顾："规则"变了](http://www.infoq.com/cn/articles/cap-twelve-years-later-how-the-rules-have-changed))
 
 ### 框架
-1. Spring
+1. Spring([25个经典的Spring面试问答](http://www.codeceo.com/article/spring-top-25-interview.html))
   - ioc/aop 使用/实现
   - 支持哪些事务,怎么支持的(代理模式)
   - 设计模式
+  - Spring bean的生命周期([Spring Bean生命周期](http://www.jianshu.com/p/3944792a5fff))
+  - Spring bean的作用域([Bean 的作用域](http://wiki.jikexueyuan.com/project/spring/bean-scopes.html))
+  - Spring AOP的实现原理(AOP和IOC的概念和实现细节以及举例你在项目中的的使用场景)([Spring AOP 实现原理与 CGLIB 应用](https://www.ibm.com/developerworks/cn/java/j-lo-springaopcglib/),[Spring Ioc实现机制——简析](http://blog.csdn.net/anger_coder/article/details/12706277))
+  - *画一下Spring的Bean工厂实现的UML图*
+  - 循环引用问题([令人混淆的Spring环境的循环依赖](http://cloudate.net/?p=1583))
+  - 注解([spring注解原理剖析与实现](http://miclee.cn/2015/12/22/spring-annotition/),[详解 Spring 3.0 基于 Annotation 的依赖注入实现](http://www.ibm.com/developerworks/cn/opensource/os-cn-spring-iocannt/))
 
 ### 容器
 1. Tomcat
   - 源码
   - 责任链模式
+  - 一个简单servlet容器实现[代码博主抄的《how tomcat works》](http://www.cnblogs.com/chenpi/p/5603072.html)
+  - 涉及到的设计模式([Tomcat 系统架构与设计模式，第 2 部分: 设计模式分析](https://www.ibm.com/developerworks/cn/java/j-lo-tomcat2/))
+  - pipline逐级调用valve时发生错误如何处理([tomcat架构分析(valve机制)](http://gearever.iteye.com/blog/1536022))
+  - BIO和NIO([tomcat bio nio apr 模式性能测试与个人看法](https://yq.aliyun.com/articles/14768))
+  - 用到的线程池细节([线程池的原理](http://www.10tiao.com/html/142/201603/403055165/1.html),[tomcat线程池策略](https://segmentfault.com/a/1190000008052008))
 
 
 
@@ -231,19 +242,10 @@ WEB：
 ======
 ### OKHttp3
 ### Spring-core
-1. 想要在Spring初始化bean的时候做一些事情该怎么做
-2. 想要在bean销毁的时候做一些事情该怎么做(bean的生命周期和scope)
-3. Spring AOP的实现原理(AOP和IOC的概念和实现细节以及举例你在项目中的的使用场景)
-4. *画一下Spring的Bean工厂实现的UML图*
-5. 循环引用问题
-6. 注解
+
 
 ### Tomcat
-1. 一个简单servlet容器实现[代码博主抄的《how tomcat works》](http://www.cnblogs.com/chenpi/p/5603072.html)
-2. 涉及到的设计模式
-3. pipline逐级调用valve时发生错误如何处理
-4. BIO和NIO
-5. 用到的线程池细节
+
 
 ### Hibernate
 ### MyBatis
