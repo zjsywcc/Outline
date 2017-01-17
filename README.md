@@ -21,7 +21,9 @@ JAVA：
   - LinkedList
 2. Map
   - Hashtable
-  - HashMap([疫苗：JAVA HASHMAP的死循环](http://coolshell.cn/articles/9606.html),[HashMap多线程并发问题分析](https://my.oschina.net/xianggao/blog/393990))
+  - HashMap
+    1. HashMap怎么判断两个元素不是同一个(equals 和 hashcode)
+    2. 多线程操作后果([疫苗：JAVA HASHMAP的死循环](http://coolshell.cn/articles/9606.html),[HashMap多线程并发问题分析](https://my.oschina.net/xianggao/blog/393990))
   - ConcurrentHashMap([Java ConcurrentHashMap Best Practices](http://howtodoinjava.com/core-java/collections/best-practices-for-using-concurrenthashmap/))
     1. 锁分段技术([ConcurrentHashMap分析](http://www.infoq.com/cn/articles/ConcurrentHashMap/))
     2. 读是否加锁，为什么([探索 ConcurrentHashMap 高并发性的实现机制](http://www.ibm.com/developerworks/cn/java/java-lo-concurrenthashmap/))
@@ -36,6 +38,7 @@ JAVA：
 1. 你的项目中用到了哪些设计模式，如何使用
 2. 知道常用设计模式的优缺点([设计模式Java版](https://www.gitbook.com/book/quanke/design-pattern-java/details), [十种设计模式示例归纳](http://www.jianshu.com/p/61b67ca754a3))
 3. 能画出常用设计模式的UML图([常用设计模式介绍及 UML 图讲解](https://gold.xitu.io/entry/5700b9732e958a005920ec19))
+4. 说一下你知道的设计模式，XX设计模式写一下代码，如果需要XX,怎么优化
 
 ### Concurrency
 1. ConcurrentHashMap
@@ -87,6 +90,7 @@ JAVA：
 4. AtomicInteger的实现原理，主要能说清楚CAS机制并且AtomicInteger是如何利用CAS机制实现的
 5. 线程池的实现原理
 6. Object类中的方法以及每个方法的作用
+7. JDK有默认消息中间件的api?
 
 ### DS
 1. Arrays and Strings([leetcode习题分类汇总-Array篇](http://zhouchaowei.com/2015/06/02/leetcode-e4-b9-a0-e9-a2-98-e5-88-86-e7-b1-bb-e6-b1-87-e6-80-bb-array-e7-af-87/))
@@ -143,10 +147,11 @@ JAVA：
 
 ### 事务
 1. 四个性质ACID
-2. 隔离级别
+2. 【常问】隔离级别
 
 ### 索引(`几种索引及其区别`)
 1. 实现方式
+2. 索引优化问题(a, b, c列的index怎么建)
 
 ### 读写分离
 
@@ -168,7 +173,10 @@ JAVA：
 ### MySQL
 1. 引擎
   - InnoDB和MyISAM的区别
-2. 水平切分和垂直切分(分布式?)
+2. 水平切分和垂直切分(分布式)
+
+### 场景
+1. 两台服务器之间数据库通信问题，如果有网络超时，故障，如何处理（以2个银行之间转账为例），如何保持实时性(原子性和一致性, CAP)
 
 WEB：
 ======
@@ -216,7 +224,7 @@ WEB：
 ### 网络服务抖动
 
 ### 场景
-1. 多点登录
+1. 单点登陆(Single sign in)
 2. 秒杀系统
 
 源码:
@@ -224,12 +232,19 @@ WEB：
 ### OKHttp3
 ### Spring-core
 1. 想要在Spring初始化bean的时候做一些事情该怎么做
-2. 想要在bean销毁的时候做一些事情该怎么做
-3. Spring AOP的实现原理
+2. 想要在bean销毁的时候做一些事情该怎么做(bean的生命周期和scope)
+3. Spring AOP的实现原理(AOP和IOC的概念和实现细节以及举例你在项目中的的使用场景)
 4. *画一下Spring的Bean工厂实现的UML图*
+5. 循环引用问题
+6. 注解
 
 ### Tomcat
-1.一个简单servlet容器实现[代码博主抄的《how tomcat works》](http://www.cnblogs.com/chenpi/p/5603072.html)
+1. 一个简单servlet容器实现[代码博主抄的《how tomcat works》](http://www.cnblogs.com/chenpi/p/5603072.html)
+2. 涉及到的设计模式
+3. pipline逐级调用valve时发生错误如何处理
+4. BIO和NIO
+5. 用到的线程池细节
+
 ### Hibernate
 ### MyBatis
 1. MyBatis中$和#的区别([mybatis深入理解(一)之 # 与 $ 区别以及 sql 预编译](https://segmentfault.com/a/1190000004617028))
