@@ -117,7 +117,7 @@ JAVA：
 1. Java虚拟机的内存布局([java虚拟机的内存布局及对象加载](http://www.acyouzi.com/2016/11/04/jvm-Memory/), [Java内存区域与内存溢出异常](http://howiefh.github.io/2015/04/07/jvm-note-1/))
 2. GC算法及几种垃圾收集器([JVM 垃圾回收器工作原理及使用实例介绍](https://www.ibm.com/developerworks/cn/java/j-lo-JVMGarbageCollection/), [垃圾收集器与内存分配策略](http://howiefh.github.io/2015/04/08/jvm-note-2/))
 3. 类加载机制，也就是双亲委派模型([深入探讨 Java 类加载器](http://www.ibm.com/developerworks/cn/java/j-lo-classloader/))
-4. Java内存模型([深入理解Java内存模型](http://ifeve.com/java-memory-model-1/))
+4. Java内存模型([深入理解Java内存模型](http://ifeve.com/java-memory-model-1/),[Jvm内存模型](http://gityuan.com/2016/01/09/java-memory/))
 5. happens-before规则([happens-before俗解](http://ifeve.com/easy-happens-before/), [Java内存访问重排序的研究](http://tech.meituan.com/java-memory-reordering.html))
 6. volatile关键字使用规则([正确使用 Volatile 变量](http://www.ibm.com/developerworks/cn/java/j-jtp06197.html), [Java内存模型与Volatile关键字](http://blog.csdn.net/jiankunking/article/details/53001009))
 7. 参数调优
