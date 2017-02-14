@@ -130,7 +130,7 @@ JAVA：
 数据库：
 ======
 ### SQL
-1. union和union all的区别
+1. union和union all的区别([union和union all 的区别](http://www.cnblogs.com/qiantuwuliang/archive/2009/05/31/1492778.html))
 2. left join([关于 MySQL LEFT JOIN 你可能需要了解的三点](https://www.oschina.net/question/89964_65912), [从一个MySQL left join优化的例子加深对查询计划的理解](http://luxuryzh.iteye.com/blog/1976004))
 3. 性能优化(`SQL基础和SQL优化`)
 4. 范式和反范式([解释一下关系数据库的第一第二第三范式](https://www.zhihu.com/question/24696366), [高性能MySQL：范式和反范式](http://blog.wuxu92.com/hp-mysql-paradigm/))
