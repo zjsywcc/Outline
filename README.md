@@ -11,7 +11,7 @@ JAVA：
 4. foreach循环原理([foreach循环原理](http://www.cnblogs.com/xrq730/p/4868465.html))
 5. volatile底层实现([volatile原理](http://ifeve.com/volatile/))
 6. equals和hashcode([在Java中正确地使用equals()和hashCode()方法](http://boxingp.github.io/blog/2015/02/24/use-equals-and-hashcode-methods-in-java-correctly/),[Java中的equals()和hashcode()之间关系](http://www.hollischuang.com/archives/1290))
-7. string,stringbuffer和stringbuilder([Java 基础之 String、StringBuilder、StringBuffer、CharSequence 区别](https://github.com/android-cn/android-discuss/issues/5),[Java：String、StringBuffer和StringBuilder的区别](http://blog.csdn.net/kingzone_2008/article/details/9220691),[浅谈 Java 字符串（String, StringBuffer, StringBuilder）](https://segmentfault.com/a/1190000002683782),[JAVA 中的 StringBuilder 和 StringBuffer 适用的场景是什么？](https://www.zhihu.com/question/20101840))
+7. string,stringbuffer和stringbuilder([Java 基础之 String、StringBuilder、StringBuffer、CharSequence 区别](https://github.com/android-cn/android-discuss/issues/5),[Java：String、StringBuffer和StringBuilder的区别](http://blog.csdn.net/kingzone_2008/article/details/9220691),[浅谈 Java 字符串（String, StringBuffer, StringBuilder）](https://segmentfault.com/a/1190000002683782),[JAVA 中的 StringBuilder 和 StringBuffer 适用的场景是什么？](https://www.zhihu.com/question/20101840), [Java中的substring真的会引起内存泄露么？](http://droidyue.com/blog/2014/12/14/substring-memory-issue-in-java/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io))
 8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142))
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
 
@@ -21,7 +21,7 @@ JAVA：
   - LinkedList
 2. Map
   - Hashtable
-  - HashMap
+  - HashMap([HashMap源码解析](http://www.jianshu.com/p/31a358d14caf))
     1. HashMap怎么判断两个元素不是同一个(equals 和 hashcode)
     2. 多线程操作后果([疫苗：JAVA HASHMAP的死循环](http://coolshell.cn/articles/9606.html),[HashMap多线程并发问题分析](https://my.oschina.net/xianggao/blog/393990))
   - ConcurrentHashMap([Java ConcurrentHashMap Best Practices](http://howtodoinjava.com/core-java/collections/best-practices-for-using-concurrenthashmap/))
@@ -39,6 +39,7 @@ JAVA：
 2. 知道常用设计模式的优缺点([设计模式Java版](https://www.gitbook.com/book/quanke/design-pattern-java/details), [十种设计模式示例归纳](http://www.jianshu.com/p/61b67ca754a3))
 3. 能画出常用设计模式的UML图([常用设计模式介绍及 UML 图讲解](https://gold.xitu.io/entry/5700b9732e958a005920ec19))
 4. 说一下你知道的设计模式，XX设计模式写一下代码，如果需要XX,怎么优化
+5. 代理模式 AOP
 
 ### Concurrency
 1. ConcurrentHashMap
@@ -74,7 +75,7 @@ JAVA：
   - 阻塞IO
   - 非阻塞IO
   - 多路复用IO
-  - 异步IO
+  - 异步IO ([Java AIO-异步通信](http://blog.csdn.net/a19881029/article/details/52099795))
   - Socket IO如何和这四种模型相关联
 2. NIO
   - NIO的原理([NIO使用及原理分析](http://www.jianshu.com/p/6a2af505ca27))
@@ -150,8 +151,9 @@ JAVA：
 2. 【常问】隔离级别([MySQL事务隔离级别](http://xstarcd.github.io/wiki/MySQL/mysql_isolation_level.html))
 
 ### 索引(`几种索引及其区别`)
-1. 实现方式
-2. 索引优化问题(a, b, c列的index怎么建,联合索引)([一个mysql多列索引的问题](https://my.oschina.net/costaxu/blog/99170),[MySQL索引原理及慢查询优化](http://tech.meituan.com/mysql-index.html))
+1. 实现方式([MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html))
+2. 索引优化问题(a, b, c列的index怎么建,联合索引)([一个mysql多列索引的问题](https://my.oschina.net/costaxu/blog/99170),[MySQL索引原理及慢查询优化](http://tech.meituan.com/mysql-index.html),[mysql索引和优化](https://github.com/zhuwei05/blog/blob/master/mysql/mysql%E7%B4%A2%E5%BC%95%E5%92%8C%E4%BC%98%E5%8C%96.md))
+3. 查看索引([如何查看数据库或表的索引？](https://www.coder-note.com/questions/5213339/how-to-see-indexes-for-a-database-or-table))
 
 ### 读写分离
 
@@ -172,7 +174,7 @@ JAVA：
 
 ### MySQL
 1. 引擎
-  - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](MySQL存储引擎MyISAM与InnoDB的主要区别对比))
+  - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](MySQL存储引擎MyISAM与InnoDB的主要区别对比),[MySQL存储引擎中的MyISAM和InnoDB](https://www.zybuluo.com/phper/note/78781),[MySQL存储引擎——MyISAM vs InnoDB](http://zheming.wang/blog/2015/02/14/2BB7BB2A-4AE3-41E5-B695-7BCFFD6E23C7/))
 2. 水平切分和垂直切分(分布式)
 
 ### 场景
@@ -201,7 +203,7 @@ WEB：
 
 ### 框架
 1. Spring([25个经典的Spring面试问答](http://www.codeceo.com/article/spring-top-25-interview.html))
-  - ioc/aop 使用/实现
+  - ioc/aop 使用/实现([java反射简单实现注入](http://www.cnblogs.com/shibalang/p/4781989.html), [深入解析Java反射（2） - invoke方法](http://www.sczyh30.com/posts/Java/java-reflection-2/), [Java深度历险（七）——Java反射与动态代理](http://www.infoq.com/cn/articles/cf-java-reflection-dynamic-proxy), [Java反射之 getMethod() 与invoke的使用](http://www.voidcn.com/blog/lycorisradiata_1/article/p-4407090.html), [ java动态代理（JDK和cglib）](http://blog.csdn.net/mdcmy/article/details/8543971))
   - 支持哪些事务,怎么支持的(代理模式)
   - 设计模式
   - Spring bean的生命周期([Spring Bean生命周期](http://www.jianshu.com/p/3944792a5fff))
@@ -231,6 +233,7 @@ WEB：
 3. *SOA和RPC*(面向服务体系，大型分布式架构)
 3. 消息队列
 4. Dubbo
+5. 大型网站系统与Java中间件实践([大型网站系统与Java中间件实践](http://wanglizhi.github.io/2016/07/27/JavaWeb-And-MiddleWare/))
 
 ### 网络服务抖动
 
