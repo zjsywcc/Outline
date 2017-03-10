@@ -14,16 +14,18 @@ JAVA：
 7. string,stringbuffer和stringbuilder([Java 基础之 String、StringBuilder、StringBuffer、CharSequence 区别](https://github.com/android-cn/android-discuss/issues/5),[Java：String、StringBuffer和StringBuilder的区别](http://blog.csdn.net/kingzone_2008/article/details/9220691),[浅谈 Java 字符串（String, StringBuffer, StringBuilder）](https://segmentfault.com/a/1190000002683782),[JAVA 中的 StringBuilder 和 StringBuffer 适用的场景是什么？](https://www.zhihu.com/question/20101840), [Java中的substring真的会引起内存泄露么？](http://droidyue.com/blog/2014/12/14/substring-memory-issue-in-java/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io))
 8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142))
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
+10. Try-with-resources([Java 7中的Try-with-resources](http://ifeve.com/java-7%E4%B8%AD%E7%9A%84try-with-resources/))
 
 ### 集合类(`底层实现原理，实现类的优缺点`)
 1. List
   - ArrayList
   - LinkedList
 2. Map
-  - Hashtable
-  - HashMap([HashMap源码解析](http://www.jianshu.com/p/31a358d14caf))
+  - Hashtable([Java8 - HashTable源码](http://blog.csdn.net/u013124587/article/details/52655042))
+  - HashMap([HashMap源码解析](http://www.jianshu.com/p/31a358d14caf),[Java 8系列之重新认识HashMap](http://tech.meituan.com/java-hashmap.html))
     1. HashMap怎么判断两个元素不是同一个(equals 和 hashcode)
     2. 多线程操作后果([疫苗：JAVA HASHMAP的死循环](http://coolshell.cn/articles/9606.html),[HashMap多线程并发问题分析](https://my.oschina.net/xianggao/blog/393990))
+    3. rehash([Java集合专题总结（1）：HashMap 和 HashTable 源码学习和面试总结](http://www.cnblogs.com/kubixuesheng/p/6144535.html))
   - ConcurrentHashMap([Java ConcurrentHashMap Best Practices](http://howtodoinjava.com/core-java/collections/best-practices-for-using-concurrenthashmap/))
     1. 锁分段技术([ConcurrentHashMap分析](http://www.infoq.com/cn/articles/ConcurrentHashMap/))
     2. 读是否加锁，为什么([探索 ConcurrentHashMap 高并发性的实现机制](http://www.ibm.com/developerworks/cn/java/java-lo-concurrenthashmap/))
@@ -42,9 +44,9 @@ JAVA：
 5. 代理模式 AOP
 
 ### Concurrency
-1. ConcurrentHashMap
+1. ConcurrentHashMap([ConcurrentHashMap源码分析--Java8](https://yq.aliyun.com/articles/36781), [ConcurrentHashMap源码分析（JDK8版本）](http://blog.csdn.net/u010723709/article/details/48007881), [jdk1.8的HashMap和ConcurrentHashMap](https://my.oschina.net/pingpangkuangmo/blog/817973),[Java并发编程总结4——ConcurrentHashMap在jdk1.8中的改进](http://www.cnblogs.com/everSeeker/p/5601861.html))
   -  并发怎么控制性能
-  -  用什么数据结构实现
+  -  用什么数据结构实现([ConcurrentHashMap源码分析整理](http://www.molotang.com/articles/559.html))
 2. 并发编程模式（Java程序性能优化）([多线程设计模式总结](http://www.cloudchou.com/softdesign/post-609.html), [网络爬虫中的那些多线程设计模式](http://www.ahathinking.com/archives/158.html), )
 3. Thread和Runnable的区别和联系([Runnable VS Thread 及其资源共享问题](https://my.oschina.net/leejun2005/blog/483999))
 4. 多次start一个线程会怎样([Java 线程简介](http://www.ibm.com/developerworks/cn/education/java/j-threads/j-threads.html))
@@ -149,6 +151,7 @@ JAVA：
 ### 事务
 1. 四个性质ACID
 2. 【常问】隔离级别([MySQL事务隔离级别](http://xstarcd.github.io/wiki/MySQL/mysql_isolation_level.html))
+3. 原理([浅析Mysql InnoDB存储引擎事务原理](http://blog.csdn.net/tangkund3218/article/details/47904021), [MySQL InnoDB单机事务原理（一）](http://www.ywnds.com/?p=4961))
 
 ### 索引(`几种索引及其区别`)
 1. 实现方式([MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html))
@@ -163,9 +166,13 @@ JAVA：
 
 ### 多表查询单表查询
 
-### 锁
+### 锁([MySQL数据库锁](https://binaryys.github.io/2017/02/08/%E7%AC%94%E8%AE%B0/MySQL/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/), [MySQL数据库优化（三）——MySQL悲观锁&&乐观锁（并发控制）](http://blog.csdn.net/daybreak1209/article/details/51606939))
 1. `读锁`
 2. `写锁`
+3. 乐观锁 ([mysql乐观锁总结和实践](http://chenzhou123520.iteye.com/blog/1863407))
+4. 原理([Mysql数据库事务的隔离级别和锁的实现原理分析](http://blog.csdn.net/tangkund3218/article/details/47704527))
+5. MVCC实现原理([InnoDB多版本(MVCC)实现简要分析](http://hedengcheng.com/?p=148))
+6. 加锁处理分析([MySQL 加锁处理分析](http://hedengcheng.com/?p=771))
 
 ### CAS
 
@@ -197,6 +204,7 @@ WEB：
 2. forward/重定向的区别
 3. HTTPS的实现原理
 4. 协议
+5. 输入网址enter发生了什么([当···时发生了什么？](https://github.com/skyline75489/what-happens-when-zh_CN))
 
 ### 分布式([谈谈业务中使用分布式的场景](https://segmentfault.com/q/1010000006095431))
 1. CAP BASE([CAP原则(CAP定理)、BASE理论](http://www.cnblogs.com/duanxz/p/5229352.html),[如何正确理解CAP理论？](http://www.jdon.com/bigdata/how-to-understand-cap.html),[CAP理论十二年回顾："规则"变了](http://www.infoq.com/cn/articles/cap-twelve-years-later-how-the-rules-have-changed))
@@ -256,3 +264,9 @@ WEB：
 
 ### 集合类
 ### Concurrent包
+
+
+Storm:
+======
+1. 基本概念([实时计算系统Storm学习笔记](https://geosmart.github.io/2016/09/13/%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9FStorm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/))
+2. 通信([【源码分析】storm拓扑运行全流程源码分析](http://blog.csdn.net/lujinhong2/article/details/49943591))
