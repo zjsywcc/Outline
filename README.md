@@ -15,6 +15,7 @@ JAVA：
 8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142))
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
 10. Try-with-resources([Java 7中的Try-with-resources](http://ifeve.com/java-7%E4%B8%AD%E7%9A%84try-with-resources/))
+11. 序列化 反序列化([serialVersionUID作用](http://swiftlet.net/archives/1268))
 
 ### 集合类(`底层实现原理，实现类的优缺点`)
 1. List
@@ -112,6 +113,7 @@ JAVA：
 3. Recursion and Dynamic Programming
 4. Sorting and Searching
   - 三匹马,找跑得第二快的(冒泡到快排)
+  - jdk Arrays.sort() ([Java 容器 & 泛型：四、Colletions.sort 和 Arrays.sort 的算法](http://www.bysocket.com/?p=219), [快速排序—三路快排 vs 双基准](http://www.importnew.com/8445.html), [JDK的快速排序算法实现DualPivotQuicksort](http://blog.csdn.net/lnho2015/article/details/50669816))
 5. 算法分析
   - *Collection.sort方法使用的是哪种排序算法(TimSort 增强型的归并排序)*
 6. 经验: 一步一步优化答案, 重要的是过程
@@ -140,8 +142,9 @@ JAVA：
 5. 慢查询([MySQL索引原理及慢查询优化](http://tech.meituan.com/mysql-index.html))
 
 ### 类型
-1. 关系型 MySQL
-2. 非关系型 Redis MongoDB
+1. 关系型 MySQL (CA)
+2. 非关系型 Redis MongoDB (CP)
+3. Dynamo (AP)
 
 ### 框架
 1. Hibernate
