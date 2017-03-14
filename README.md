@@ -16,6 +16,7 @@ JAVA：
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
 10. Try-with-resources([Java 7中的Try-with-resources](http://ifeve.com/java-7%E4%B8%AD%E7%9A%84try-with-resources/))
 11. 序列化 反序列化([serialVersionUID作用](http://swiftlet.net/archives/1268))
+12. interface 和 abstract class 区别
 
 ### 集合类(`底层实现原理，实现类的优缺点`)
 1. List
@@ -117,6 +118,7 @@ JAVA：
 5. 算法分析
   - *Collection.sort方法使用的是哪种排序算法(TimSort 增强型的归并排序)*
 6. 经验: 一步一步优化答案, 重要的是过程
+7. string contains([为什么java String.contains 没有使用类似KMP字符串匹配算法进行优化？](https://www.zhihu.com/question/27852656))
 
 ### JVM
 1. Java虚拟机的内存布局([java虚拟机的内存布局及对象加载](http://www.acyouzi.com/2016/11/04/jvm-Memory/), [Java内存区域与内存溢出异常](http://howiefh.github.io/2015/04/07/jvm-note-1/))
@@ -175,7 +177,9 @@ JAVA：
 3. 乐观锁 ([mysql乐观锁总结和实践](http://chenzhou123520.iteye.com/blog/1863407))
 4. 原理([Mysql数据库事务的隔离级别和锁的实现原理分析](http://blog.csdn.net/tangkund3218/article/details/47704527))
 5. MVCC实现原理([InnoDB多版本(MVCC)实现简要分析](http://hedengcheng.com/?p=148))
-6. 加锁处理分析([MySQL 加锁处理分析](http://hedengcheng.com/?p=771))
+6. 加锁处理分析([MySQL 加锁处理分析](http://hedengcheng.com/?p=771) [InnoDB 事务/锁/多版本 实现分析](http://hedengcheng.com/?p=286))
+7. 死锁的处理([MySQL中的锁（表锁、行锁）](http://www.cnblogs.com/chenqionghe/p/4845693.html) [mysql死锁(deadlock)分析及解决](http://www.xxdafa.com/article?id=56914506b8063f1a058b456c))
+8. 锁的类型([Mysql InnoDB锁和死锁](http://xiaobaoqiu.github.io/blog/2015/06/03/mysql-innodbsi-suo/))
 
 ### CAS
 
