@@ -10,7 +10,7 @@ JAVA：
 3. transient([transient小记](http://www.cnblogs.com/lanxuezaipiao/p/3369962.html))
 4. foreach循环原理([foreach循环原理](http://www.cnblogs.com/xrq730/p/4868465.html))
 5. volatile底层实现([volatile原理](http://ifeve.com/volatile/))
-6. equals和hashcode([在Java中正确地使用equals()和hashCode()方法](http://boxingp.github.io/blog/2015/02/24/use-equals-and-hashcode-methods-in-java-correctly/),[Java中的equals()和hashcode()之间关系](http://www.hollischuang.com/archives/1290))
+6. equals和hashcode([在Java中正确地使用equals()和hashCode()方法](http://boxingp.github.io/blog/2015/02/24/use-equals-and-hashcode-methods-in-java-correctly/),[Java中的equals()和hashcode()之间关系](http://www.hollischuang.com/archives/1290) [java提高篇(十三)-----equals()方法总结](http://www.cnblogs.com/chenssy/p/3416195.html) [如何在JAVA中避免EQUALS方法的隐藏陷阱](http://coolshell.cn/articles/1051.html))
 7. string,stringbuffer和stringbuilder([Java 基础之 String、StringBuilder、StringBuffer、CharSequence 区别](https://github.com/android-cn/android-discuss/issues/5),[Java：String、StringBuffer和StringBuilder的区别](http://blog.csdn.net/kingzone_2008/article/details/9220691),[浅谈 Java 字符串（String, StringBuffer, StringBuilder）](https://segmentfault.com/a/1190000002683782),[JAVA 中的 StringBuilder 和 StringBuffer 适用的场景是什么？](https://www.zhihu.com/question/20101840), [Java中的substring真的会引起内存泄露么？](http://droidyue.com/blog/2014/12/14/substring-memory-issue-in-java/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io))
 8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142))
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
