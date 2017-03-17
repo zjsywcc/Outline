@@ -15,8 +15,10 @@ JAVA：
 8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142))
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
 10. Try-with-resources([Java 7中的Try-with-resources](http://ifeve.com/java-7%E4%B8%AD%E7%9A%84try-with-resources/))
-11. 序列化 反序列化([serialVersionUID作用](http://swiftlet.net/archives/1268))
+11. 序列化 反序列化([serialVersionUID作用](http://swiftlet.net/archives/1268), [JAVA序列化](http://blog.csdn.net/u013256816/article/details/50474678), [序列化和反序列化](http://tech.meituan.com/serialization_vs_deserialization.html), [Java序列化](http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/))
 12. interface 和 abstract class 区别
+13. 变长参数([Java可变参数](http://www.qiuchengjia.cn/2016/08/14/JAVA/Java%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/) [Java 中的变长参数](http://blog.jrwang.me/2015/java-varargs/))
+14. 枚举详解([Java enum的用法详解](http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html), [Java枚举详解](http://www.jianshu.com/p/6f2f5627c27d), [通过枚举enum实现单例设计](http://www.cnblogs.com/liaokailin/p/3196253.html), [枚举单例模式如何防止反射攻击](https://segmentfault.com/a/1190000000699591), [Java 单例模式的两种高效写法](http://www.jianshu.com/p/4e8ca4e2af6c))
 
 ### 集合类(`底层实现原理，实现类的优缺点`)
 1. List
@@ -44,6 +46,7 @@ JAVA：
 3. 能画出常用设计模式的UML图([常用设计模式介绍及 UML 图讲解](https://gold.xitu.io/entry/5700b9732e958a005920ec19))
 4. 说一下你知道的设计模式，XX设计模式写一下代码，如果需要XX,怎么优化
 5. 代理模式 AOP
+6. 单例模式([如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/))
 
 ### Concurrency
 1. ConcurrentHashMap([ConcurrentHashMap源码分析--Java8](https://yq.aliyun.com/articles/36781), [ConcurrentHashMap源码分析（JDK8版本）](http://blog.csdn.net/u010723709/article/details/48007881), [jdk1.8的HashMap和ConcurrentHashMap](https://my.oschina.net/pingpangkuangmo/blog/817973),[Java并发编程总结4——ConcurrentHashMap在jdk1.8中的改进](http://www.cnblogs.com/everSeeker/p/5601861.html))
@@ -64,6 +67,7 @@ JAVA：
   - synchronized锁普通方法和锁静态方法([静态方法加锁，和非静态方法加锁区别](http://greemranqq.iteye.com/blog/1974143))
   - 死锁的原理及排查方法([Java 程序死锁问题原理及解决方案](https://www.ibm.com/developerworks/cn/java/j-lo-deadlock/), )
 9. *假如有Thread1、Thread2、Thread3、Thread4四条线程分别统计C、D、E、F四个盘的大小，所有线程都统计完毕交给Thread5线程去做汇总，应当如何实现？(java.util.concurrent下就有现成的类可以使用)*([Java的几个同步辅助类](http://www.cnblogs.com/whthomas/p/java_concurrent_tools.html), [Java并发编程：CountDownLatch、CyclicBarrier和Semaphore](http://www.cnblogs.com/dolphin0520/p/3920397.html))
+10. Java的wait(), notify()和notifyAll()使用小结([Java的wait(), notify()和notifyAll()使用小结](http://www.cnblogs.com/techyc/p/3272321.html), [Java进阶（三）多线程开发关键技术](http://www.jasongj.com/java/multi_thread/))
 
 ### JUC
 1. LinkedBlockingQueue([Java多线程-工具篇-BlockingQueue](Java多线程-工具篇-BlockingQueue),[BlockingQueue](http://wsmajunfeng.iteye.com/blog/1629354),[Java并发阻塞队列(put和take、offer和poll、drainTo)的使用](http://lawrence-zxc.github.io/2011/03/14/thread-blocking/))
@@ -73,6 +77,8 @@ JAVA：
 3. ReentrantLock和Condition(TODO:java线程等待/通知模型)
 4. ExecutorService
 5. ConcurrentHashMap
+6. ScheduledThreadPoolExecutor([Java线程池源码分析二(ScheduledThreadPoolExecutor)](http://yeming.me/2016/05/13/threadPool2/), [Executor框架延时执行任务及周期性执行任务的方法介绍](http://www.jianshu.com/p/e3889d32c8fc))
+7. CountDownLatch, CyclicBarrier, Phaser([Java进阶（四）线程间通信剖析](http://www.jasongj.com/java/thread_communication/))
 
 ### Socket IO(阻塞/非阻塞 同步/异步的区别)
 1. 四种IO模型([Java I/O模型从BIO到NIO和Reactor模式](http://www.jasongj.com/java/nio_reactor/), [Java I/O 模型的演进](http://www.importnew.com/21383.html))
@@ -87,6 +93,7 @@ JAVA：
   - NIO的三大组成([Java NIO系列教程](http://ifeve.com/overview/))
   - *NIO会阻塞在Selector的select方法上*
   - *Netty框架*
+3. 五中IO模型和原理([Java NIO：浅析I/O模型](http://www.cnblogs.com/dolphin0520/p/3916526.html), [也谈BIO | NIO | AIO （Java版）](https://my.oschina.net/bluesky0leon/blog/132361))
 
 ### JDK源码
 1. String的hashCode()方法是怎么实现的
@@ -119,6 +126,9 @@ JAVA：
   - *Collection.sort方法使用的是哪种排序算法(TimSort 增强型的归并排序)*
 6. 经验: 一步一步优化答案, 重要的是过程
 7. string contains([为什么java String.contains 没有使用类似KMP字符串匹配算法进行优化？](https://www.zhihu.com/question/27852656))
+8. Java实现tail([Java高效实现Tail -f](http://6140717.blog.51cto.com/6130717/1052845))
+9. Java重写equals([Java中equals()与hashCode()的原理与设计](http://blog.csdn.net/vernonzheng/article/details/8153669)
+10. 冒泡排序([白话经典算法系列之一 冒泡排序的三种实现](http://blog.csdn.net/morewindows/article/details/6657829))
 
 ### JVM
 1. Java虚拟机的内存布局([java虚拟机的内存布局及对象加载](http://www.acyouzi.com/2016/11/04/jvm-Memory/), [Java内存区域与内存溢出异常](http://howiefh.github.io/2015/04/07/jvm-note-1/))
@@ -246,9 +256,11 @@ WEB：
 1. 负载均衡
 2. 一致性hash([MemCache超详细解读](http://www.cnblogs.com/xrq730/p/4948707.html), [一致性Hash算法，Java代码实现的深入研究](http://www.cnblogs.com/xrq730/p/5186728.html))
 3. *SOA和RPC*(面向服务体系，大型分布式架构)
-3. 消息队列
+3. 消息队列原理([消息队列设计精要](http://tech.meituan.com/mq-design.html))
 4. Dubbo
 5. 大型网站系统与Java中间件实践([大型网站系统与Java中间件实践](http://wanglizhi.github.io/2016/07/27/JavaWeb-And-MiddleWare/))
+6. 高并发 10w并发量
+7. 安全 https 加密算法
 
 ### 网络服务抖动
 
@@ -277,3 +289,5 @@ Storm:
 ======
 1. 基本概念([实时计算系统Storm学习笔记](https://geosmart.github.io/2016/09/13/%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9FStorm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/))
 2. 通信([【源码分析】storm拓扑运行全流程源码分析](http://blog.csdn.net/lujinhong2/article/details/49943591))
+3. 序列化使用kryo([序列化](https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Serialization.md))
+4. thrift([Thrift序列化/反序列化方法对比](http://du00cs.github.io/2014/11/thrift-serialization-des/))
