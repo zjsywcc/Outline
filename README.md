@@ -259,9 +259,13 @@ WEB：
 3. 消息队列原理([消息队列设计精要](http://tech.meituan.com/mq-design.html))
 4. Dubbo
 5. 大型网站系统与Java中间件实践([大型网站系统与Java中间件实践](http://wanglizhi.github.io/2016/07/27/JavaWeb-And-MiddleWare/))
-6. 高并发 10w并发量
-7. 安全 https 加密算法
-
+6. 高并发 10w并发量([秒杀系统架构分析与实战](https://my.oschina.net/xianggao/blog/524943))
+7. 安全 
+  - https([HTTPS背后的加密算法](http://isaachan.github.io/blog/2014/07/20/cipher-behind-https/), [大型网站的 HTTPS 实践（一）—— HTTPS 协议和原理](http://op.baidu.com/2015/04/https-s01a01/),
+    [HTTPS 协议详解](https://jin-yang.github.io/post/https-introduce.html), [详解https是如何确保安全的？](http://www.wxtlife.com/2016/03/27/%E8%AF%A6%E8%A7%A3https%E6%98%AF%E5%A6%82%E4%BD%95%E7%A1%AE%E4%BF%9D%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%9F/))
+  - 加密算法([Notes on Cryptography Ciphers](http://rakhesh.com/infrastructure/notes-on-cryptography-ciphers-rsa-dsa-aes-rc4-ecc-ecdsa-sha-and-so-on/))
+  - TLS([TLS 握手优化详解](https://imququ.com/post/optimize-tls-handshake.html), [SSL/TLS原理详解](http://seanlook.com/2015/01/07/tls-ssl/))
+8. 阿里中间件([阿里中间件团队介绍](http://jm.taobao.org/about/))
 ### 网络服务抖动
 
 ### 场景
@@ -291,3 +295,4 @@ Storm:
 2. 通信([【源码分析】storm拓扑运行全流程源码分析](http://blog.csdn.net/lujinhong2/article/details/49943591))
 3. 序列化使用kryo([序列化](https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Serialization.md))
 4. thrift([Thrift序列化/反序列化方法对比](http://du00cs.github.io/2014/11/thrift-serialization-des/))
+5. disrupter([【系统架构】聊聊Disruptor](http://community.bittiger.io/topic/183/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84-%E8%81%8A%E8%81%8Adisruptor))
