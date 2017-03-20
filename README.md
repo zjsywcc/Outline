@@ -19,6 +19,8 @@ JAVA：
 12. interface 和 abstract class 区别
 13. 变长参数([Java可变参数](http://www.qiuchengjia.cn/2016/08/14/JAVA/Java%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/) [Java 中的变长参数](http://blog.jrwang.me/2015/java-varargs/))
 14. 枚举详解([Java enum的用法详解](http://www.cnblogs.com/happyPawpaw/archive/2013/04/09/3009553.html), [Java枚举详解](http://www.jianshu.com/p/6f2f5627c27d), [通过枚举enum实现单例设计](http://www.cnblogs.com/liaokailin/p/3196253.html), [枚举单例模式如何防止反射攻击](https://segmentfault.com/a/1190000000699591), [Java 单例模式的两种高效写法](http://www.jianshu.com/p/4e8ca4e2af6c))
+15. Null详解([Java中有关Null的9件事](http://www.importnew.com/14229.html)) 
+16. Java 8 默认方法([Java 8 默认方法（Default Methods）](http://ebnbin.com/2015/12/20/java-8-default-methods/))
 
 ### 集合类(`底层实现原理，实现类的优缺点`)
 1. List
@@ -68,6 +70,8 @@ JAVA：
   - 死锁的原理及排查方法([Java 程序死锁问题原理及解决方案](https://www.ibm.com/developerworks/cn/java/j-lo-deadlock/), )
 9. *假如有Thread1、Thread2、Thread3、Thread4四条线程分别统计C、D、E、F四个盘的大小，所有线程都统计完毕交给Thread5线程去做汇总，应当如何实现？(java.util.concurrent下就有现成的类可以使用)*([Java的几个同步辅助类](http://www.cnblogs.com/whthomas/p/java_concurrent_tools.html), [Java并发编程：CountDownLatch、CyclicBarrier和Semaphore](http://www.cnblogs.com/dolphin0520/p/3920397.html))
 10. Java的wait(), notify()和notifyAll()使用小结([Java的wait(), notify()和notifyAll()使用小结](http://www.cnblogs.com/techyc/p/3272321.html), [Java进阶（三）多线程开发关键技术](http://www.jasongj.com/java/multi_thread/))
+11. 多线程和多进程([多进程与多线程的乱七八糟的事情](http://axhiao.github.io/2015/04/27/process-thread.html))
+12. 进程间通信方式([线程间的通信、同步方式与进程间通信方式](http://www.jianshu.com/p/9218692cb209))
 
 ### JUC
 1. LinkedBlockingQueue([Java多线程-工具篇-BlockingQueue](Java多线程-工具篇-BlockingQueue),[BlockingQueue](http://wsmajunfeng.iteye.com/blog/1629354),[Java并发阻塞队列(put和take、offer和poll、drainTo)的使用](http://lawrence-zxc.github.io/2011/03/14/thread-blocking/))
@@ -113,6 +117,7 @@ JAVA：
   - 平衡树
   - B+树(数据库的索引，为什么要使用这个数据结构)
   - *AVL树 红黑树 区别*
+  - 红黑树([彻底搞懂红黑树](http://www.akathink.com/2016/08/08/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82%E7%BA%A2%E9%BB%91%E6%A0%91/))
 5. 图
 
 ### Algorithm
@@ -137,7 +142,7 @@ JAVA：
 4. Java内存模型([深入理解Java内存模型](http://ifeve.com/java-memory-model-1/),[Jvm内存模型](http://gityuan.com/2016/01/09/java-memory/))
 5. happens-before规则([happens-before俗解](http://ifeve.com/easy-happens-before/), [Java内存访问重排序的研究](http://tech.meituan.com/java-memory-reordering.html))
 6. volatile关键字使用规则([正确使用 Volatile 变量](http://www.ibm.com/developerworks/cn/java/j-jtp06197.html), [Java内存模型与Volatile关键字](http://blog.csdn.net/jiankunking/article/details/53001009))
-7. 参数调优
+7. 参数调优([Tomcat中JVM内存溢出及合理配置](https://my.oschina.net/xianggao/blog/83823))
 8. 调优工具
 9. OOM
 
