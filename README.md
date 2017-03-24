@@ -72,7 +72,8 @@ JAVA：
 10. Java的wait(), notify()和notifyAll()使用小结([Java的wait(), notify()和notifyAll()使用小结](http://www.cnblogs.com/techyc/p/3272321.html), [Java进阶（三）多线程开发关键技术](http://www.jasongj.com/java/multi_thread/))
 11. 多线程和多进程([多进程与多线程的乱七八糟的事情](http://axhiao.github.io/2015/04/27/process-thread.html))
 12. 进程间通信方式([线程间的通信、同步方式与进程间通信方式](http://www.jianshu.com/p/9218692cb209))
-13. 自旋锁和互斥锁([自旋锁和互斥锁](http://jacean.github.io/2016/03/23/%E8%87%AA%E6%97%8B%E9%94%81%E5%92%8C%E4%BA%92%E6%96%A5%E9%94%81/))
+13. 自旋锁和互斥锁 自旋锁原理 什么时候不能用自旋([自旋锁和互斥锁](http://jacean.github.io/2016/03/23/%E8%87%AA%E6%97%8B%E9%94%81%E5%92%8C%E4%BA%92%E6%96%A5%E9%94%81/))
+
 
 ### JUC
 1. LinkedBlockingQueue([Java多线程-工具篇-BlockingQueue](Java多线程-工具篇-BlockingQueue),[BlockingQueue](http://wsmajunfeng.iteye.com/blog/1629354),[Java并发阻塞队列(put和take、offer和poll、drainTo)的使用](http://lawrence-zxc.github.io/2011/03/14/thread-blocking/))
@@ -206,7 +207,8 @@ JAVA：
 ### MySQL
 1. 引擎
   - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](MySQL存储引擎MyISAM与InnoDB的主要区别对比),[MySQL存储引擎中的MyISAM和InnoDB](https://www.zybuluo.com/phper/note/78781),[MySQL存储引擎——MyISAM vs InnoDB](http://zheming.wang/blog/2015/02/14/2BB7BB2A-4AE3-41E5-B695-7BCFFD6E23C7/))
-2. 水平切分和垂直切分(分布式)
+2. 水平切分和垂直切分(分布式) 分表问题
+3. mongo和mysql的对比
 
 ### 场景
 1. 两台服务器之间数据库通信问题，如果有网络超时，故障，如何处理（以2个银行之间转账为例），如何保持实时性(原子性和一致性, CAP,BASE)([分布式系统的事务处理](http://coolshell.cn/articles/10910.html),[分布式系统事务一致性解决方案](http://www.infoq.com/cn/articles/solution-of-distributed-system-transaction-consistency),[保证分布式系统数据一致性的6种方案](http://weibo.com/ttarticle/p/show?id=2309403965965003062676))
@@ -263,7 +265,7 @@ WEB：
 1. 负载均衡
 2. 一致性hash([MemCache超详细解读](http://www.cnblogs.com/xrq730/p/4948707.html), [一致性Hash算法，Java代码实现的深入研究](http://www.cnblogs.com/xrq730/p/5186728.html))
 3. *SOA和RPC*(面向服务体系，大型分布式架构)
-3. 消息队列原理([消息队列设计精要](http://tech.meituan.com/mq-design.html))
+3. 消息队列原理 消息队列如何保证可靠([消息队列设计精要](http://tech.meituan.com/mq-design.html))
 4. Dubbo
 5. 大型网站系统与Java中间件实践([大型网站系统与Java中间件实践](http://wanglizhi.github.io/2016/07/27/JavaWeb-And-MiddleWare/))
 6. 高并发 10w并发量([秒杀系统架构分析与实战](https://my.oschina.net/xianggao/blog/524943))
@@ -272,6 +274,7 @@ WEB：
     [HTTPS 协议详解](https://jin-yang.github.io/post/https-introduce.html), [详解https是如何确保安全的？](http://www.wxtlife.com/2016/03/27/%E8%AF%A6%E8%A7%A3https%E6%98%AF%E5%A6%82%E4%BD%95%E7%A1%AE%E4%BF%9D%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%9F/))
   - 加密算法([Notes on Cryptography Ciphers](http://rakhesh.com/infrastructure/notes-on-cryptography-ciphers-rsa-dsa-aes-rc4-ecc-ecdsa-sha-and-so-on/))
   - TLS([TLS 握手优化详解](https://imququ.com/post/optimize-tls-handshake.html), [SSL/TLS原理详解](http://seanlook.com/2015/01/07/tls-ssl/))
+  - SQL注入 XSS漏洞
 8. 阿里中间件([阿里中间件团队介绍](http://jm.taobao.org/about/))
 9. 序列化([Java序列化](http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/))  
 
@@ -309,4 +312,15 @@ Storm:
 计算机基础
 ======
 ### 计算机网络
-1. tcp/ip tcp 和 udp的区别 tcp消息重发 time wait([Linux下套接字详解（一）----TCP/UDP的区别与联系](http://blog.csdn.net/gatieme/article/details/46240775))
+1. tcp/ip tcp和udp的区别和联系 tcp消息重发 time wait([Linux下套接字详解（一）----TCP/UDP的区别与联系](http://blog.csdn.net/gatieme/article/details/46240775))
+2. tcp拥塞控制, 怎么判断拥塞
+
+### 操作系统
+1. x86有哪些寄存器你用过
+2. 死锁, 有没有碰到过死锁, 如何判断死锁, 代码如何规避, 银行家算法
+3. 进程与线程的区别
+4. 管程概念
+5. linux怎么看内存占用 什么时候切到swap分区
+
+### 数据结构
+1. 红黑树 红黑树的插入算法
