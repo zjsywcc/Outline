@@ -59,7 +59,7 @@ JAVA：
 4. 多次start一个线程会怎样([Java 线程简介](http://www.ibm.com/developerworks/cn/education/java/j-threads/j-threads.html))
 5. 线程有哪些状态([JAVA线程间的状态转换](https://my.oschina.net/mingdongcheng/blog/139263), [Java多线程学习](http://blog.csdn.net/evankaka/article/details/44153709))
 6. 线程池
-  - 常用的线程池有几种，这几种线程池有什么区别和联系([java自带线程池和队列详细讲解](https://www.oschina.net/question/565065_86540))
+  - 常用的线程池有几种，这几种线程池有什么区别和联系([java自带线程池和队列详细讲解](https://www.oschina.net/question/565065_86540), [Java线程池分析](http://gityuan.com/2016/01/16/thread-pool/))
   - 线程池的实现原理([从使用到原理学习Java线程池](http://www.codeceo.com/article/java-threadpool-learn.html), [几种线程池的实现算法分析
 ](http://www.infoq.com/cn/articles/thread-pool-algorithm-realization))
   - 判断什么场景该使用什么样的线程池比较合适
@@ -72,6 +72,7 @@ JAVA：
 10. Java的wait(), notify()和notifyAll()使用小结([Java的wait(), notify()和notifyAll()使用小结](http://www.cnblogs.com/techyc/p/3272321.html), [Java进阶（三）多线程开发关键技术](http://www.jasongj.com/java/multi_thread/))
 11. 多线程和多进程([多进程与多线程的乱七八糟的事情](http://axhiao.github.io/2015/04/27/process-thread.html))
 12. 进程间通信方式([线程间的通信、同步方式与进程间通信方式](http://www.jianshu.com/p/9218692cb209))
+13. 自旋锁和互斥锁([自旋锁和互斥锁](http://jacean.github.io/2016/03/23/%E8%87%AA%E6%97%8B%E9%94%81%E5%92%8C%E4%BA%92%E6%96%A5%E9%94%81/))
 
 ### JUC
 1. LinkedBlockingQueue([Java多线程-工具篇-BlockingQueue](Java多线程-工具篇-BlockingQueue),[BlockingQueue](http://wsmajunfeng.iteye.com/blog/1629354),[Java并发阻塞队列(put和take、offer和poll、drainTo)的使用](http://lawrence-zxc.github.io/2011/03/14/thread-blocking/))
@@ -145,6 +146,7 @@ JAVA：
 7. 参数调优([Tomcat中JVM内存溢出及合理配置](https://my.oschina.net/xianggao/blog/83823))
 8. 调优工具
 9. OOM
+10. 四种引用类型([强引用、弱引用、软引用、虚引用](http://brucezz.itscoder.com/four-kind-of-reference-in-java))
 
 ### Servlet
 1. 规范
@@ -271,6 +273,8 @@ WEB：
   - 加密算法([Notes on Cryptography Ciphers](http://rakhesh.com/infrastructure/notes-on-cryptography-ciphers-rsa-dsa-aes-rc4-ecc-ecdsa-sha-and-so-on/))
   - TLS([TLS 握手优化详解](https://imququ.com/post/optimize-tls-handshake.html), [SSL/TLS原理详解](http://seanlook.com/2015/01/07/tls-ssl/))
 8. 阿里中间件([阿里中间件团队介绍](http://jm.taobao.org/about/))
+9. 序列化([Java序列化](http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/))  
+
 ### 网络服务抖动
 
 ### 场景
@@ -301,3 +305,8 @@ Storm:
 3. 序列化使用kryo([序列化](https://github.com/weyo/Storm-Documents/blob/master/Manual/zh/Serialization.md))
 4. thrift([Thrift序列化/反序列化方法对比](http://du00cs.github.io/2014/11/thrift-serialization-des/))
 5. disrupter([【系统架构】聊聊Disruptor](http://community.bittiger.io/topic/183/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84-%E8%81%8A%E8%81%8Adisruptor))
+
+计算机基础
+======
+### 计算机网络
+1. tcp/ip tcp 和 udp的区别 tcp消息重发 time wait([Linux下套接字详解（一）----TCP/UDP的区别与联系](http://blog.csdn.net/gatieme/article/details/46240775))
