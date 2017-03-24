@@ -70,9 +70,10 @@ JAVA：
   - 死锁的原理及排查方法([Java 程序死锁问题原理及解决方案](https://www.ibm.com/developerworks/cn/java/j-lo-deadlock/), )
 9. *假如有Thread1、Thread2、Thread3、Thread4四条线程分别统计C、D、E、F四个盘的大小，所有线程都统计完毕交给Thread5线程去做汇总，应当如何实现？(java.util.concurrent下就有现成的类可以使用)*([Java的几个同步辅助类](http://www.cnblogs.com/whthomas/p/java_concurrent_tools.html), [Java并发编程：CountDownLatch、CyclicBarrier和Semaphore](http://www.cnblogs.com/dolphin0520/p/3920397.html))
 10. Java的wait(), notify()和notifyAll()使用小结([Java的wait(), notify()和notifyAll()使用小结](http://www.cnblogs.com/techyc/p/3272321.html), [Java进阶（三）多线程开发关键技术](http://www.jasongj.com/java/multi_thread/))
-11. 多线程和多进程([多进程与多线程的乱七八糟的事情](http://axhiao.github.io/2015/04/27/process-thread.html))
+11. 多线程和多进程([多进程与多线程的乱七八糟的事情](http://axhiao.github.io/2015/04/27/process-thread.html), [多进程单线程模型与单进程多线程模型之争](http://www.jianshu.com/p/c61a7746d139), [为什么要了解进程与线程的区别，了解二者的区别有什么意义呢？](https://www.zhihu.com/question/24351439))
 12. 进程间通信方式([线程间的通信、同步方式与进程间通信方式](http://www.jianshu.com/p/9218692cb209))
 13. 自旋锁和互斥锁 自旋锁原理 什么时候不能用自旋([自旋锁和互斥锁](http://jacean.github.io/2016/03/23/%E8%87%AA%E6%97%8B%E9%94%81%E5%92%8C%E4%BA%92%E6%96%A5%E9%94%81/))
+14. 死锁的查看和避免([Java如何查看死锁？](http://blog.csdn.net/u014039577/article/details/52351626), [JAVA死锁和避免死锁](https://my.oschina.net/caiz/blog/483971), [Java 程序死锁问题原理及解决方案](https://www.ibm.com/developerworks/cn/java/j-lo-deadlock/), [Java死锁范例以及如何分析死锁](http://www.importnew.com/9668.html))
 
 
 ### JUC
@@ -207,8 +208,8 @@ JAVA：
 ### MySQL
 1. 引擎
   - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](MySQL存储引擎MyISAM与InnoDB的主要区别对比),[MySQL存储引擎中的MyISAM和InnoDB](https://www.zybuluo.com/phper/note/78781),[MySQL存储引擎——MyISAM vs InnoDB](http://zheming.wang/blog/2015/02/14/2BB7BB2A-4AE3-41E5-B695-7BCFFD6E23C7/))
-2. 水平切分和垂直切分(分布式) 分表问题
-3. mongo和mysql的对比
+2. 水平切分和垂直切分(分布式) 分表问题([［MySQL］MySQL分区与传统的分库分表](http://haitian299.github.io/2016/05/26/mysql-partitioning/), [mysql 分库分表的方法](https://yq.aliyun.com/articles/42644))
+3. mongo和mysql的对比([MongoDB 与 MySQL 对比](http://www.jianshu.com/p/55954fe3d216), [mongodb与mysql相比的优缺点](http://www.bbsmax.com/A/QV5ZEj8nJy/), [MySQL与MongoDB的区别](http://www.cnblogs.com/caihuafeng/p/5494336.html))
 
 ### 场景
 1. 两台服务器之间数据库通信问题，如果有网络超时，故障，如何处理（以2个银行之间转账为例），如何保持实时性(原子性和一致性, CAP,BASE)([分布式系统的事务处理](http://coolshell.cn/articles/10910.html),[分布式系统事务一致性解决方案](http://www.infoq.com/cn/articles/solution-of-distributed-system-transaction-consistency),[保证分布式系统数据一致性的6种方案](http://weibo.com/ttarticle/p/show?id=2309403965965003062676))
@@ -274,9 +275,10 @@ WEB：
     [HTTPS 协议详解](https://jin-yang.github.io/post/https-introduce.html), [详解https是如何确保安全的？](http://www.wxtlife.com/2016/03/27/%E8%AF%A6%E8%A7%A3https%E6%98%AF%E5%A6%82%E4%BD%95%E7%A1%AE%E4%BF%9D%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%9F/))
   - 加密算法([Notes on Cryptography Ciphers](http://rakhesh.com/infrastructure/notes-on-cryptography-ciphers-rsa-dsa-aes-rc4-ecc-ecdsa-sha-and-so-on/))
   - TLS([TLS 握手优化详解](https://imququ.com/post/optimize-tls-handshake.html), [SSL/TLS原理详解](http://seanlook.com/2015/01/07/tls-ssl/))
-  - SQL注入 XSS漏洞
+  - SQL注入 XSS漏洞([总结 XSS 与 CSRF 两种跨站攻击](https://blog.tonyseek.com/post/introduce-to-xss-and-csrf/), [Spring Security Web应用入门环境搭建](http://xxgblog.com/2015/09/06/spring-security-start/), [理解CSRF(跨站请求伪造)](https://github.com/pillarjs/understanding-csrf/blob/master/README_zh.md))
 8. 阿里中间件([阿里中间件团队介绍](http://jm.taobao.org/about/))
 9. 序列化([Java序列化](http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/))  
+10. 服务器并发模型 nginx([NGINX的并发模型](https://xusiwei.github.io/post/2016/nginx-concurrency-model/), [nginx并发模型与traffic_server并发模型简单比较](http://www.cnblogs.com/liushaodong/archive/2013/02/26/2933535.html), [NGINX引入线程池 性能提升9倍](http://www.infoq.com/cn/articles/thread-pools-boost-performance-9x), [Apache和Nginx比较](http://alicharles.com/article/apache-enginx/), [apache与nginx对比](http://oohcode.com/2015/10/09/apache-and-nginx/))
 
 ### 网络服务抖动
 
@@ -313,14 +315,15 @@ Storm:
 ======
 ### 计算机网络
 1. tcp/ip tcp和udp的区别和联系 tcp消息重发 time wait([Linux下套接字详解（一）----TCP/UDP的区别与联系](http://blog.csdn.net/gatieme/article/details/46240775))
-2. tcp拥塞控制, 怎么判断拥塞
+2. tcp拥塞控制, 怎么判断拥塞([TCP 的那些事儿（下）](http://coolshell.cn/articles/11609.html))
 
 ### 操作系统
 1. x86有哪些寄存器你用过
 2. 死锁, 有没有碰到过死锁, 如何判断死锁, 代码如何规避, 银行家算法
-3. 进程与线程的区别
-4. 管程概念
-5. linux怎么看内存占用 什么时候切到swap分区
+3. 进程与线程的区别([进程,线程 ->iOS 多线程 runloop](http://www.jianshu.com/p/2b993a4b913e))
+4. 管程概念([管程](http://www.cnblogs.com/youxin/p/3587038.html))
+5. linux怎么看内存占用 Cache Buffer区别 ([Ubuntu 使用top/free查看内存占用大的原因](https://fukun.org/archives/02201800.html), [Linux下查看内存使用情况方法总结](http://9iphp.com/linux/1247.html))
+6. 什么时候切到swap分区(虚拟内存) ([linux swap交换分区说明/管理](http://coolnull.com/3699.html))
 
 ### 数据结构
 1. 红黑树 红黑树的插入算法
