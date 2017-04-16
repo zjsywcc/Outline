@@ -12,7 +12,7 @@ JAVA：
 5. volatile底层实现([volatile原理](http://ifeve.com/volatile/))
 6. equals和hashcode([在Java中正确地使用equals()和hashCode()方法](http://boxingp.github.io/blog/2015/02/24/use-equals-and-hashcode-methods-in-java-correctly/),[Java中的equals()和hashcode()之间关系](http://www.hollischuang.com/archives/1290) [java提高篇(十三)-----equals()方法总结](http://www.cnblogs.com/chenssy/p/3416195.html) [如何在JAVA中避免EQUALS方法的隐藏陷阱](http://coolshell.cn/articles/1051.html))
 7. string,stringbuffer和stringbuilder([Java 基础之 String、StringBuilder、StringBuffer、CharSequence 区别](https://github.com/android-cn/android-discuss/issues/5),[Java：String、StringBuffer和StringBuilder的区别](http://blog.csdn.net/kingzone_2008/article/details/9220691),[浅谈 Java 字符串（String, StringBuffer, StringBuilder）](https://segmentfault.com/a/1190000002683782),[JAVA 中的 StringBuilder 和 StringBuffer 适用的场景是什么？](https://www.zhihu.com/question/20101840), [Java中的substring真的会引起内存泄露么？](http://droidyue.com/blog/2014/12/14/substring-memory-issue-in-java/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io))
-8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142))
+8. 伪泛型([Java 泛型总结（一）：基本用法与类型擦除](https://segmentfault.com/a/1190000005179142), [【Java】泛型中 extends 和 super 的区别？](https://itimetraveler.github.io/2016/12/27/%E3%80%90Java%E3%80%91%E6%B3%9B%E5%9E%8B%E4%B8%AD%20extends%20%E5%92%8C%20super%20%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F/), [泛型的PECS原则](http://dz.sdut.edu.cn/blog/subaochen/2017/01/generics-pecs/))
 9. 自动装箱([Java中的自动装箱与拆箱](http://droidyue.com/blog/2015/04/07/autoboxing-and-autounboxing-in-java/index.html),[java自动装箱拆箱总结](https://www.kancloud.cn/digest/rainnnbow-javabase/136298))
 10. Try-with-resources([Java 7中的Try-with-resources](http://ifeve.com/java-7%E4%B8%AD%E7%9A%84try-with-resources/))
 11. 序列化 反序列化([serialVersionUID作用](http://swiftlet.net/archives/1268), [JAVA序列化](http://blog.csdn.net/u013256816/article/details/50474678), [序列化和反序列化](http://tech.meituan.com/serialization_vs_deserialization.html), [Java序列化](http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/))
@@ -50,7 +50,7 @@ JAVA：
 5. 代理模式 AOP
 6. 单例模式([如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/))
 
-### Concurrency
+### Concurrency([Java并发性和多线程介绍目录](http://ifeve.com/java-concurrency-thread-directory/))
 1. ConcurrentHashMap([ConcurrentHashMap源码分析--Java8](https://yq.aliyun.com/articles/36781), [ConcurrentHashMap源码分析（JDK8版本）](http://blog.csdn.net/u010723709/article/details/48007881), [jdk1.8的HashMap和ConcurrentHashMap](https://my.oschina.net/pingpangkuangmo/blog/817973),[Java并发编程总结4——ConcurrentHashMap在jdk1.8中的改进](http://www.cnblogs.com/everSeeker/p/5601861.html))
   -  并发怎么控制性能
   -  用什么数据结构实现([ConcurrentHashMap源码分析整理](http://www.molotang.com/articles/559.html))
@@ -137,6 +137,7 @@ JAVA：
 8. Java实现tail([Java高效实现Tail -f](http://6140717.blog.51cto.com/6130717/1052845))
 9. Java重写equals([Java中equals()与hashCode()的原理与设计](http://blog.csdn.net/vernonzheng/article/details/8153669)
 10. 冒泡排序([白话经典算法系列之一 冒泡排序的三种实现](http://blog.csdn.net/morewindows/article/details/6657829))
+11. 动态规划([动态规划：从新手到专家](http://www.hawstein.com/posts/dp-novice-to-advanced.html))
 
 ### JVM
 1. Java虚拟机的内存布局([java虚拟机的内存布局及对象加载](http://www.acyouzi.com/2016/11/04/jvm-Memory/), [Java内存区域与内存溢出异常](http://howiefh.github.io/2015/04/07/jvm-note-1/))
@@ -199,6 +200,7 @@ JAVA：
 6. 加锁处理分析([MySQL 加锁处理分析](http://hedengcheng.com/?p=771) [InnoDB 事务/锁/多版本 实现分析](http://hedengcheng.com/?p=286))
 7. 死锁的处理([MySQL中的锁（表锁、行锁）](http://www.cnblogs.com/chenqionghe/p/4845693.html) [mysql死锁(deadlock)分析及解决](http://www.xxdafa.com/article?id=56914506b8063f1a058b456c))
 8. 锁的类型([Mysql InnoDB锁和死锁](http://xiaobaoqiu.github.io/blog/2015/06/03/mysql-innodbsi-suo/))
+9. Innodb中的事务隔离级别和锁的关系([Innodb中的事务隔离级别和锁的关系](http://tech.meituan.com/innodb-lock.html),[InnoDB的锁和事务隔离级别](http://www.jianshu.com/p/a2fe4886613b),[Innodb 中 RR 隔离级别能否防止幻读？](https://github.com/Yhzhtk/note/issues/42),[MySQL的InnoDB的幻读问题](http://blog.sina.com.cn/s/blog_499740cb0100ugs7.html))
 
 ### CAS
 
@@ -207,7 +209,7 @@ JAVA：
 
 ### MySQL
 1. 引擎
-  - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](MySQL存储引擎MyISAM与InnoDB的主要区别对比),[MySQL存储引擎中的MyISAM和InnoDB](https://www.zybuluo.com/phper/note/78781),[MySQL存储引擎——MyISAM vs InnoDB](http://zheming.wang/blog/2015/02/14/2BB7BB2A-4AE3-41E5-B695-7BCFFD6E23C7/))
+  - InnoDB和MyISAM的区别([MySQL存储引擎介绍](http://www.jellythink.com/archives/640),[MySQL存储引擎InnoDB与Myisam的六大区别](https://my.oschina.net/junn/blog/183341),[MySQL存储引擎MyISAM与InnoDB的主要区别对比](http://www.ha97.com/4197.html),[MySQL存储引擎中的MyISAM和InnoDB](https://www.zybuluo.com/phper/note/78781),[MySQL存储引擎——MyISAM vs InnoDB](http://zheming.wang/blog/2015/02/14/2BB7BB2A-4AE3-41E5-B695-7BCFFD6E23C7/))
 2. 水平切分和垂直切分(分布式) 分表问题([［MySQL］MySQL分区与传统的分库分表](http://haitian299.github.io/2016/05/26/mysql-partitioning/), [mysql 分库分表的方法](https://yq.aliyun.com/articles/42644))
 3. mongo和mysql的对比([MongoDB 与 MySQL 对比](http://www.jianshu.com/p/55954fe3d216), [mongodb与mysql相比的优缺点](http://www.bbsmax.com/A/QV5ZEj8nJy/), [MySQL与MongoDB的区别](http://www.cnblogs.com/caihuafeng/p/5494336.html))
 
@@ -271,7 +273,7 @@ WEB：
 5. 大型网站系统与Java中间件实践([大型网站系统与Java中间件实践](http://wanglizhi.github.io/2016/07/27/JavaWeb-And-MiddleWare/))
 6. 高并发 10w并发量([秒杀系统架构分析与实战](https://my.oschina.net/xianggao/blog/524943))
 7. 安全 
-  - https([HTTPS背后的加密算法](http://isaachan.github.io/blog/2014/07/20/cipher-behind-https/), [大型网站的 HTTPS 实践（一）—— HTTPS 协议和原理](http://op.baidu.com/2015/04/https-s01a01/),
+  - https([HTTPS背后的加密算法](http://isaachan.github.io/blog/2014/07/20/cipher-behind-https/), [大型网站的 HTTPS 实践（一）—— HTTPS 协议和原理](http://op.baidu.com/2015/04/https-s01a01/),[Java 和 HTTP 的那些事（四） HTTPS 和 证书](http://www.aneasystone.com/archives/2016/04/java-and-https.html),
     [HTTPS 协议详解](https://jin-yang.github.io/post/https-introduce.html), [详解https是如何确保安全的？](http://www.wxtlife.com/2016/03/27/%E8%AF%A6%E8%A7%A3https%E6%98%AF%E5%A6%82%E4%BD%95%E7%A1%AE%E4%BF%9D%E5%AE%89%E5%85%A8%E7%9A%84%EF%BC%9F/))
   - 加密算法([Notes on Cryptography Ciphers](http://rakhesh.com/infrastructure/notes-on-cryptography-ciphers-rsa-dsa-aes-rc4-ecc-ecdsa-sha-and-so-on/))
   - TLS([TLS 握手优化详解](https://imququ.com/post/optimize-tls-handshake.html), [SSL/TLS原理详解](http://seanlook.com/2015/01/07/tls-ssl/))
@@ -316,6 +318,10 @@ Storm:
 ### 计算机网络
 1. tcp/ip tcp和udp的区别和联系 tcp消息重发 time wait([Linux下套接字详解（一）----TCP/UDP的区别与联系](http://blog.csdn.net/gatieme/article/details/46240775))
 2. tcp拥塞控制, 怎么判断拥塞([TCP 的那些事儿（下）](http://coolshell.cn/articles/11609.html))
+3. 延时 网络抖动
+4. tcp粘包([TCP粘包与拆包——基于Netty](http://intheworld.win/2016/12/04/tcp%E7%B2%98%E5%8C%85%E4%B8%8E%E6%8B%86%E5%8C%85-%E5%9F%BA%E4%BA%8Enetty/))
+5. 长连接([面试时如何优雅的谈论HTTP／1.0／1.1／2.0](http://www.jianshu.com/p/52d86558ca57))
+6. 服务端推送([Web端即时通讯技术盘点：短轮询、Comet、Websocket、SSE](https://zhuanlan.zhihu.com/p/21595082))
 
 ### 操作系统
 1. x86有哪些寄存器你用过
