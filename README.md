@@ -26,7 +26,7 @@ JAVA：
 1. List
   - ArrayList
   - LinkedList
-2. Map
+2. Map([Java中HashMap,LinkedHashMap,TreeMap的区别](http://blog.csdn.net/xiyuan1999/article/details/6198394))
   - Hashtable([Java8 - HashTable源码](http://blog.csdn.net/u013124587/article/details/52655042))
   - HashMap([HashMap源码解析](http://www.jianshu.com/p/31a358d14caf),[Java 8系列之重新认识HashMap](http://tech.meituan.com/java-hashmap.html))
     1. HashMap怎么判断两个元素不是同一个(equals 和 hashcode)
@@ -121,6 +121,7 @@ JAVA：
   - B+树(数据库的索引，为什么要使用这个数据结构)
   - *AVL树 红黑树 区别*
   - 红黑树([彻底搞懂红黑树](http://www.akathink.com/2016/08/08/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82%E7%BA%A2%E9%BB%91%E6%A0%91/))
+  - 堆([常见排序算法 - 堆排序 (Heap Sort)](http://bubkoo.com/2014/01/14/sort-algorithm/heap-sort/), [数据结构系列——堆](http://vickyqi.com/2015/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E5%A0%86/))
 5. 图
 
 ### Algorithm
