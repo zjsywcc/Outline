@@ -24,9 +24,9 @@ JAVA：
 
 ### 集合类(`底层实现原理，实现类的优缺点`)
 1. List
-  - ArrayList
-  - LinkedList
-2. Map([Java中HashMap,LinkedHashMap,TreeMap的区别](http://blog.csdn.net/xiyuan1999/article/details/6198394))
+  - ArrayList([【集合框架】JDK1.8源码分析之ArrayList（六）](http://www.cnblogs.com/leesf456/p/5308358.html), [Java集合干货系列-（一）ArrayList源码解析](http://www.jianshu.com/p/085a5ba2aca8))
+  - LinkedList([Java 容器源码分析之 LinkedList](http://blog.jrwang.me/2016/java-collections-linkedlist/), [JDK1.8源码分析之LinkedList（七）](http://www.cnblogs.com/leesf456/p/5308843.html))
+2. Map([Java中HashMap,LinkedHashMap,TreeMap的区别](http://blog.csdn.net/xiyuan1999/article/details/6198394),[HashMap、HashTable、LinkedHashMap和TreeMap用法和区别](http://www.jianshu.com/p/c6687a765e0f))
   - Hashtable([Java8 - HashTable源码](http://blog.csdn.net/u013124587/article/details/52655042))
   - HashMap([HashMap源码解析](http://www.jianshu.com/p/31a358d14caf),[Java 8系列之重新认识HashMap](http://tech.meituan.com/java-hashmap.html))
     1. HashMap怎么判断两个元素不是同一个(equals 和 hashcode)
@@ -36,10 +36,13 @@ JAVA：
     1. 锁分段技术([ConcurrentHashMap分析](http://www.infoq.com/cn/articles/ConcurrentHashMap/))
     2. 读是否加锁，为什么([探索 ConcurrentHashMap 高并发性的实现机制](http://www.ibm.com/developerworks/cn/java/java-lo-concurrenthashmap/))
     3. 迭代器是强一致性还是弱一致性([为什么ConcurrentHashMap是弱一致的](http://ifeve.com/concurrenthashmap-weakly-consistent/))
+  - null值([java各常用集合类是否接受null值](http://blog.csdn.net/ml1990s/article/details/11649237))
+  - TreeMap([Java提高篇（二七）-----TreeMap](http://www.cnblogs.com/chenssy/p/3746600.html))
 3. Set
   - HashSet
 4. *CopyOnWrite容器*([Java中的Copy-On-Write容器](http://ifeve.com/java-copy-on-write/))
 5. *Queue*
+6. collection包结构([Java集合框架概述：Collection(List, Set, Queue)和Map](http://sparkandshine.net/java-collections-framework-overview-collection-list-set-queue-map/))
 
 
 ### 设计模式(`研究常用的十几钟`)
@@ -74,10 +77,11 @@ JAVA：
 12. 进程间通信方式([线程间的通信、同步方式与进程间通信方式](http://www.jianshu.com/p/9218692cb209))
 13. 自旋锁和互斥锁 自旋锁原理 什么时候不能用自旋([自旋锁和互斥锁](http://jacean.github.io/2016/03/23/%E8%87%AA%E6%97%8B%E9%94%81%E5%92%8C%E4%BA%92%E6%96%A5%E9%94%81/))
 14. 死锁的查看和避免([Java如何查看死锁？](http://blog.csdn.net/u014039577/article/details/52351626), [JAVA死锁和避免死锁](https://my.oschina.net/caiz/blog/483971), [Java 程序死锁问题原理及解决方案](https://www.ibm.com/developerworks/cn/java/j-lo-deadlock/), [Java死锁范例以及如何分析死锁](http://www.importnew.com/9668.html))
+15. 守护线程和用户线程的区别([Java线程和多线程（六）——守护线程](http://blog.csdn.net/EthanWhite/article/details/52594927))
 
 
 ### JUC
-1. LinkedBlockingQueue([Java多线程-工具篇-BlockingQueue](Java多线程-工具篇-BlockingQueue),[BlockingQueue](http://wsmajunfeng.iteye.com/blog/1629354),[Java并发阻塞队列(put和take、offer和poll、drainTo)的使用](http://lawrence-zxc.github.io/2011/03/14/thread-blocking/))
+1. LinkedBlockingQueue([Java多线程-工具篇-BlockingQueue](http://www.cnblogs.com/jackyuj/archive/2010/11/24/1886553.html),[BlockingQueue](http://wsmajunfeng.iteye.com/blog/1629354),[Java并发阻塞队列(put和take、offer和poll、drainTo)的使用](http://lawrence-zxc.github.io/2011/03/14/thread-blocking/))
   - poll(WebMagic中QueueScheduler放使用add,取使用带有synchronized的poll,TODO:poll没有阻塞的特性,但为什么要加sync)
   - take
 2. AtomicInteger
@@ -151,9 +155,11 @@ JAVA：
 8. 调优工具
 9. OOM
 10. 四种引用类型([强引用、弱引用、软引用、虚引用](http://brucezz.itscoder.com/four-kind-of-reference-in-java))
+11. finalize([Java避免使用finalizer方法](http://benjaminwhx.com/2016/09/10/Java%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8finalizer%E6%96%B9%E6%B3%95/))
+12. GC在什么时候，对什么东西，做了什么事情([一个面试官对面试问题的分析](http://icyfenix.iteye.com/blog/715301))
 
 ### Servlet
-1. 规范
+1. 规范([Java Servlet 3.1 规范](https://waylau.gitbooks.io/servlet-3-1-specification/))
 
 数据库：
 ======
@@ -168,6 +174,7 @@ JAVA：
 1. 关系型 MySQL (CA)
 2. 非关系型 Redis MongoDB (CP)
 3. Dynamo (AP)
+4. 行存储和列存储([大数据存取的选择：行存储还是列存储？](http://www.infoq.com/cn/articles/bigdata-store-choose))
 
 ### 框架
 1. Hibernate
@@ -223,7 +230,7 @@ WEB：
 1. 谈谈分布式Session的几种实现方式(常用的四种)
 2. 讲一下Session和Cookie的区别和联系以及Session的实现原理([]谈谈分布式Session的几种实现方式,Session和Cookie的区别和联系以及Session的实现原理](http://aoyouzi.iteye.com/blog/2310193))
 
-### Servlet
+### Servlet([Servlet 工作原理解析](https://www.ibm.com/developerworks/cn/java/j-lo-servlet/))
 1. web.xml里面的内容(使用 *实现原理*)
   - Filter
   - Servlet
@@ -250,6 +257,9 @@ WEB：
   - *画一下Spring的Bean工厂实现的UML图*
   - 循环引用问题([令人混淆的Spring环境的循环依赖](http://cloudate.net/?p=1583))
   - 注解([spring注解原理剖析与实现](http://miclee.cn/2015/12/22/spring-annotition/),[详解 Spring 3.0 基于 Annotation 的依赖注入实现](http://www.ibm.com/developerworks/cn/opensource/os-cn-spring-iocannt/))
+  - Spring分发请求的过程([Spring MVC请求流程和Spring MVC DispatcherServlet](https://my.oschina.net/jettyWang/blog/738497))
+  - 事务传播 隔离级别([从代理到Spring事务3-Spring事务](http://xiaobaoqiu.github.io/blog/2016/07/07/springshi-wu/), [Spring事务源码分析（一）Spring事务入门](https://my.oschina.net/pingpangkuangmo/blog/376331), [spring事务-说说Propagation及其实现原理](http://blog.csdn.net/yanyan19880509/article/details/53041564), [Spring 事务管理高级应用难点剖析: 第 1 部分](https://www.ibm.com/developerworks/cn/java/j-lo-spring-ts1/))
+  - spring与线程([Spring与线程](http://geek41.github.io/java/2014/10/01/spring-thread.html))
 
 ### 容器
 1. Tomcat
@@ -282,6 +292,8 @@ WEB：
 8. 阿里中间件([阿里中间件团队介绍](http://jm.taobao.org/about/))
 9. 序列化([Java序列化](http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/))  
 10. 服务器并发模型 nginx([NGINX的并发模型](https://xusiwei.github.io/post/2016/nginx-concurrency-model/), [nginx并发模型与traffic_server并发模型简单比较](http://www.cnblogs.com/liushaodong/archive/2013/02/26/2933535.html), [NGINX引入线程池 性能提升9倍](http://www.infoq.com/cn/articles/thread-pools-boost-performance-9x), [Apache和Nginx比较](http://alicharles.com/article/apache-enginx/), [apache与nginx对比](http://oohcode.com/2015/10/09/apache-and-nginx/))
+11. Kafka([kafka数据可靠性深度解读](http://mp.weixin.qq.com/s/RGHbQg3mpWGZ8_lLSc5y8A), [Kafka文件存储机制那些事](http://tech.meituan.com/kafka-fs-design-theory.html))
+12. j2ee数据分层([J2EE(四)- po，vo，bo，pojo，dto，dao区别](http://xfhnever.com/2014/12/09/j2ee-povodtobo/))
 
 ### 网络服务抖动
 
@@ -323,6 +335,7 @@ Storm:
 4. tcp粘包([TCP粘包与拆包——基于Netty](http://intheworld.win/2016/12/04/tcp%E7%B2%98%E5%8C%85%E4%B8%8E%E6%8B%86%E5%8C%85-%E5%9F%BA%E4%BA%8Enetty/))
 5. 长连接([面试时如何优雅的谈论HTTP／1.0／1.1／2.0](http://www.jianshu.com/p/52d86558ca57))
 6. 服务端推送([Web端即时通讯技术盘点：短轮询、Comet、Websocket、SSE](https://zhuanlan.zhihu.com/p/21595082))
+7. HTTP和TCP 全双工 or 半双工([http协议和websocket协议的区别](http://kaimingwan.com/post/ji-chu-zhi-shi/httpxie-yi-he-websocketxie-yi-de-qu-bie))
 
 ### 操作系统
 1. x86有哪些寄存器你用过
