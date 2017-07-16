@@ -253,7 +253,7 @@ WEB：
   - 设计模式
   - Spring bean的生命周期([Spring Bean生命周期](http://www.jianshu.com/p/3944792a5fff))
   - Spring bean的作用域([Bean 的作用域](http://wiki.jikexueyuan.com/project/spring/bean-scopes.html))
-  - Spring AOP的实现原理(AOP和IOC的概念和实现细节以及举例你在项目中的的使用场景)([Spring AOP 实现原理与 CGLIB 应用](https://www.ibm.com/developerworks/cn/java/j-lo-springaopcglib/),[Spring Ioc实现机制——简析](http://blog.csdn.net/anger_coder/article/details/12706277))
+  - Spring AOP的实现原理(AOP和IOC的概念和实现细节以及举例你在项目中的的使用场景)([Spring AOP 实现原理与 CGLIB 应用](https://www.ibm.com/developerworks/cn/java/j-lo-springaopcglib/),[Spring Ioc实现机制——简析](http://blog.csdn.net/anger_coder/article/details/12706277),[关于 Spring AOP (AspectJ) 你该知晓的一切](https://zhuanlan.zhihu.com/p/25522841))
   - *画一下Spring的Bean工厂实现的UML图*
   - 循环引用问题([令人混淆的Spring环境的循环依赖](http://cloudate.net/?p=1583))
   - 注解([spring注解原理剖析与实现](http://miclee.cn/2015/12/22/spring-annotition/),[详解 Spring 3.0 基于 Annotation 的依赖注入实现](http://www.ibm.com/developerworks/cn/opensource/os-cn-spring-iocannt/))
@@ -278,9 +278,8 @@ WEB：
 ### 架构
 1. 负载均衡
 2. 一致性hash([MemCache超详细解读](http://www.cnblogs.com/xrq730/p/4948707.html), [一致性Hash算法，Java代码实现的深入研究](http://www.cnblogs.com/xrq730/p/5186728.html))
-3. *SOA和RPC*(面向服务体系，大型分布式架构)
-3. 消息队列原理 消息队列如何保证可靠([消息队列设计精要](http://tech.meituan.com/mq-design.html))
-4. Dubbo
+3. *SOA和RPC*(面向服务体系，大型分布式架构 Dubbo) ([RPC-client异步收发核心细节？](https://mp.weixin.qq.com/s/nk0F-0zSVg2l6AmCJPAx6g))
+4. 消息队列原理 消息队列如何保证可靠([消息队列设计精要](http://tech.meituan.com/mq-design.html))
 5. 大型网站系统与Java中间件实践([大型网站系统与Java中间件实践](http://wanglizhi.github.io/2016/07/27/JavaWeb-And-MiddleWare/))
 6. 高并发 10w并发量([秒杀系统架构分析与实战](https://my.oschina.net/xianggao/blog/524943))
 7. 安全 
